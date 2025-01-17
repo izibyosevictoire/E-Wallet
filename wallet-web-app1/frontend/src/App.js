@@ -28,7 +28,7 @@ const App = () => {
     <div>
       <h1>Wallet Application</h1>
       <TransactionForm />
-      <h2>Transactions</h2>
+      {/* <h2>Transactions</h2> */}
       <ul>
         {transactions.map((transaction) => (
           <li key={transaction._id}>
