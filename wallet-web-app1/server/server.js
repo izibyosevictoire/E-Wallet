@@ -10,12 +10,6 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('Welcome to the E-Wallet Backend API');
 });
-
-app.use(express.static(path.join(frontend, 'frontend/build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(frontend, 'frontend/build', 'app.js'));
-});
 const PORT = process.env.PORT || 8000;
 
 
