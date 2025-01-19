@@ -9,7 +9,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 8000;
 
-// Connect to MongoDB
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
@@ -22,5 +22,8 @@ app.listen(PORT, () => {
 const transactionRoutes = require("./api/transactions");
 const budgetRoutes = require("./api/budgets");
 
+
+
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/budgets", budgetRoutes);
+

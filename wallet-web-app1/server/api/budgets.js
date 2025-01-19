@@ -3,7 +3,7 @@ const Budget = require("../models/Budget");
 
 const router = express.Router();
 
-// POST a new budget
+
 router.post("/", async (req, res) => {
   try {
     const budget = new Budget(req.body);
@@ -14,7 +14,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-// GET all budgets
+
+
 router.get("/", async (req, res) => {
   try {
     const budgets = await Budget.find();

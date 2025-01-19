@@ -97,4 +97,43 @@
   .transaction-item span strong {
     color: #333333;
   }
+  .notification {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  nav {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #57331e;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f9f9f9;
+    color: #a36e50;
+  }
   
