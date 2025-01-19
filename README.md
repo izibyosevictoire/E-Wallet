@@ -1,4 +1,4 @@
-# Expense and Income Tracker (MERN)
+# E-Wallet System (MERN)
 
 This is a web application designed to help individuals manage their expenses and income more effectively. Built with the MERN stack (MongoDB, Express.js, React, Node.js), this application allows users to track transactions across multiple accounts, categorize expenses, and generate insightful reports.
 
@@ -42,5 +42,46 @@ Before running the project, ensure you have the following installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd expense-tracker-mern
+   git clone https://github.com/izibyosevictoire/E-Wallet.git
+   cd E-wallet
+
+2. **Backend setup**
+
+  Navigate to the backend directory:
+```bash
+cd server
+```
+Install dependencies:
+
+```bash
+npm install
+```
+
+
+Create a .env file in the backend directory and define the following variables:
+```bash
+PORT=8000
+MONGO_URI=your_mongodb_connection_string
+```
+
+
+Start the backend server:
+```bash
+npm run dev
+```
+
+
+3. **Frontend Setup**
+
+Navigate to the frontend directory:
+```bash
+cd Frontend
+```
+Install dependencies:
+```bash
+npm install
+```
+Start the development server:
+
+```bash
+npm start
