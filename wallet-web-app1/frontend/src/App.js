@@ -20,6 +20,10 @@ const App = () => {
     fetchTransactions();
   }, []);
 
+  app.get('/', (req, res) => {
+    res.send('Welcome to the E-Wallet frontend API');
+  });
+
   return (
     <Router>
       <div>
