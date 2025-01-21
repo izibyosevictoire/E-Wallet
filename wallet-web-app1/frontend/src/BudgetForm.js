@@ -16,7 +16,7 @@ const BudgetForm = () => {
     };
 
     try {
-      const response = await axios.post("https://e-wallet-liart.vercel.app/api/budgets", budgetData);
+      const response = await axios.post("http://localhost:8000/api/budgets", budgetData);
       setBudgets([...budgets, response.data]); 
       alert("Budget set successfully!");
       setCategory("");

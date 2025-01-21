@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get("https://e-wallet-liart.vercel.app/api/transactions");
+        const response = await axios.get("http://localhost:8000/api/transactions");
         setTransactions(response.data);
       } catch (err) {
         console.error("Network Error:", err);

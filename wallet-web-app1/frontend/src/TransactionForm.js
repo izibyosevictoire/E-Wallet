@@ -30,7 +30,7 @@ const TransactionForm = () => {
     };
    
     try {
-      const response = await axios.post("https://e-wallet-liart.vercel.app/api/transactions", transactionData);
+      const response = await axios.post("http://localhost:8000/api/transactions", transactionData);
       setTransactions([...transactions, response.data]);
       setNotification(""); 
       alert("Transaction added successfully!");
@@ -46,7 +46,7 @@ const TransactionForm = () => {
   const handleGenerateReport = async () => {
     try {
       
-      const response = await axios.get("https://e-wallet-liart.vercel.app/api/transactions/report", {
+      const response = await axios.get("http://localhost:8000/api/transactions/report", {
         params: { startDate, endDate }, 
       });
       console.log("Report data:", response.data);
