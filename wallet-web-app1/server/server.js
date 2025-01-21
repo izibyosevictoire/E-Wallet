@@ -11,6 +11,19 @@ app.use(express.json());
 app.use(cors());
 
 
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the E-Wallet Backend API");
+});
+
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+});
+
+
 const PORT = process.env.PORT || 8000;
 
 mongoose
